@@ -1,8 +1,6 @@
-
 import 'package:flutter/material.dart';
 
 class AppSpacing {
-  // Spacing values
   static const double xs = 4.0;
   static const double sm = 8.0;
   static const double md = 16.0;
@@ -10,21 +8,18 @@ class AppSpacing {
   static const double xl = 32.0;
   static const double xxl = 48.0;
 
-  // Edge insets shortcuts
   static const EdgeInsets paddingXs = EdgeInsets.all(xs);
   static const EdgeInsets paddingSm = EdgeInsets.all(sm);
   static const EdgeInsets paddingMd = EdgeInsets.all(md);
   static const EdgeInsets paddingLg = EdgeInsets.all(lg);
   static const EdgeInsets paddingXl = EdgeInsets.all(xl);
 
-  // Horizontal padding
   static const EdgeInsets horizontalXs = EdgeInsets.symmetric(horizontal: xs);
   static const EdgeInsets horizontalSm = EdgeInsets.symmetric(horizontal: sm);
   static const EdgeInsets horizontalMd = EdgeInsets.symmetric(horizontal: md);
   static const EdgeInsets horizontalLg = EdgeInsets.symmetric(horizontal: lg);
   static const EdgeInsets horizontalXl = EdgeInsets.symmetric(horizontal: xl);
 
-  // Vertical padding
   static const EdgeInsets verticalXs = EdgeInsets.symmetric(vertical: xs);
   static const EdgeInsets verticalSm = EdgeInsets.symmetric(vertical: sm);
   static const EdgeInsets verticalMd = EdgeInsets.symmetric(vertical: md);
@@ -32,7 +27,6 @@ class AppSpacing {
   static const EdgeInsets verticalXl = EdgeInsets.symmetric(vertical: xl);
 }
 
-/// Border radius constants for consistent rounded corners
 class AppRadius {
   static const double sm = 8.0;
   static const double md = 12.0;
@@ -266,71 +260,87 @@ ThemeData get darkTheme => ThemeData(
 );
 
 TextTheme _buildTextTheme(Brightness brightness) {
+  const String fontFamily = 'Inter';
   return const TextTheme(
     displayLarge: TextStyle(
+      fontFamily: fontFamily,
       fontSize: FontSizes.displayLarge,
       fontWeight: FontWeight.w400,
       letterSpacing: -0.25,
     ),
     displayMedium: TextStyle(
+      fontFamily: fontFamily,
       fontSize: FontSizes.displayMedium,
       fontWeight: FontWeight.w400,
     ),
     displaySmall: TextStyle(
+      fontFamily: fontFamily,
       fontSize: FontSizes.displaySmall,
       fontWeight: FontWeight.w400,
     ),
     headlineLarge: TextStyle(
+      fontFamily: fontFamily,
       fontSize: FontSizes.headlineLarge,
       fontWeight: FontWeight.w600,
       letterSpacing: -0.5,
     ),
     headlineMedium: TextStyle(
+      fontFamily: fontFamily,
       fontSize: FontSizes.headlineMedium,
       fontWeight: FontWeight.w600,
     ),
     headlineSmall: TextStyle(
+      fontFamily: fontFamily,
       fontSize: FontSizes.headlineSmall,
       fontWeight: FontWeight.w600,
     ),
     titleLarge: TextStyle(
+      fontFamily: fontFamily,
       fontSize: FontSizes.titleLarge,
       fontWeight: FontWeight.w600,
     ),
     titleMedium: TextStyle(
+      fontFamily: fontFamily,
       fontSize: FontSizes.titleMedium,
       fontWeight: FontWeight.w500,
     ),
     titleSmall: TextStyle(
+      fontFamily: fontFamily,
       fontSize: FontSizes.titleSmall,
       fontWeight: FontWeight.w500,
     ),
     labelLarge: TextStyle(
+      fontFamily: fontFamily,
       fontSize: FontSizes.labelLarge,
       fontWeight: FontWeight.w500,
       letterSpacing: 0.1,
     ),
     labelMedium: TextStyle(
+      fontFamily: fontFamily,
       fontSize: FontSizes.labelMedium,
       fontWeight: FontWeight.w500,
       letterSpacing: 0.5,
     ),
     labelSmall: TextStyle(
+      fontFamily: fontFamily,
       fontSize: FontSizes.labelSmall,
       fontWeight: FontWeight.w500,
       letterSpacing: 0.5,
     ),
     bodyLarge: TextStyle(
+      fontFamily: fontFamily,
       fontSize: FontSizes.bodyLarge,
       fontWeight: FontWeight.w400,
       letterSpacing: 0.15,
     ),
     bodyMedium: TextStyle(
+      fontFamily: fontFamily,
       fontSize: FontSizes.bodyMedium,
       fontWeight: FontWeight.w400,
       letterSpacing: 0.25,
     ),
     bodySmall: TextStyle(
+      fontFamily: fontFamily,
       fontSize: FontSizes.bodySmall,
       fontWeight: FontWeight.w400,
       letterSpacing: 0.4,
